@@ -1,0 +1,17 @@
+.headerDiv{
+    background: url("../../../public/assets/book.jpg");
+    background-position: top left center center;
+    background-size: auto, cover;
+    // width: auto;
+    height: 200px;
+
+    p{
+        color: black;
+    }
+
+    .leftPart{
+        position: absolute;
+        left:150px
+
+    }
+}
