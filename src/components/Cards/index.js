@@ -2,7 +2,6 @@ import React from "react";
 import { useSelector } from "react-redux";
 import "./style.scss";
 import ModalComp from "../ModalComp";
-import { Grid, GridItem } from '@chakra-ui/react'
 
 function Cards() {
   const books = useSelector((state) => state.search.books);
@@ -11,12 +10,14 @@ function Cards() {
   return (
     <div className="cardsDiv">
       {books.length < 1 ? (
+        <div className="searchIconDiv">
           <img src="./assets/search.png" alt="search" className="searchIcon"/>
+          </div>
       ) : (
         books.map((item, i) => {
           return (
-            <Grid key={i} templateColumns='repeat(4, 1fr)' gap={6} className="cardContainer">
-              <GridItem w='100%' h='10' className="content">
+            <div key={i} className="cardContainer">
+              <div  className="content">
                 <img
                   src={item.volumeInfo.imageLinks.smallThumbnail}
                   alt="books"
@@ -30,8 +31,8 @@ function Cards() {
                     Preview
                   </a> | <ModalComp desc={item.volumeInfo.description} />
                 </div>
-              </GridItem>
-            </Grid>
+              </div>
+            </div>
           );
         })
       )}

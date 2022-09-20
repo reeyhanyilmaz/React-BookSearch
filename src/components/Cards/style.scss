@@ -8,13 +8,24 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
-  .searchIcon {
-    width: 300px;
-    height: 400px;
+  .searchIconDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    .searchIcon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      width: 100px;
+      height: 100px;
+    }
   }
 
   .cardContainer {
-    // background-color: yellow;
+    display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -47,6 +58,11 @@
         flex-direction: row;
         font-size: 15px;
       }
+    }
+
+    .content:hover {
+      box-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
+      transition: all 0.3s ease-in-out;
     }
   }
 }

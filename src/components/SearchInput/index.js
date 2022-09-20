@@ -24,9 +24,10 @@ function SearchInput() {
           value={search}
           onChange={(e) => dispatch(setSearch(e.target.value))}
           variant='filled'
+          style={{marginRight: "10px"}}
         />
         <Button colorScheme="purple" type="submit">
-          Search
+         <img src="./assets/search(1).png" alt="search" className="searchButtonIcon"/>
         </Button>
       </form>
     </div>
