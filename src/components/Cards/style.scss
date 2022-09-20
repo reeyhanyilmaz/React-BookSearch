@@ -1,0 +1,52 @@
+.cardsDiv {
+  text-align: center;
+  margin-top: 5rem;
+  max-width: 1200px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  .searchIcon {
+    width: 300px;
+    height: 400px;
+  }
+
+  .cardContainer {
+    // background-color: yellow;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    .content {
+      margin-bottom: 2rem;
+      width: 250px;
+      height: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease-in-out;
+      padding: 1rem;
+
+      .title {
+        font-size: 17px;
+        margin-top: 10px;
+      }
+
+      .author {
+        font-size: 15px;
+      }
+
+      .cardFooter {
+        display: flex;
+        flex-direction: row;
+        font-size: 15px;
+      }
+    }
+  }
+}

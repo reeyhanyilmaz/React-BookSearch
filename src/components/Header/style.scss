@@ -2,16 +2,18 @@
     background: url("../../../public/assets/book.jpg");
     background-position: top left center center;
     background-size: auto, cover;
-    // width: auto;
-    height: 200px;
+    width: 900px;
+    height: 500px;
+    border-radius: 8px;
 
     p{
         color: black;
+        font-weight: 700;
+        font-size: 40px;
     }
 
-    .leftPart{
-        position: absolute;
-        left:150px
-
-    }
+    // .leftPart{
+    //     position: absolute;
+    //     left:150px;
+    // }
 }

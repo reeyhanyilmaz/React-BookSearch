@@ -5,10 +5,10 @@ import "./style.scss";
 function Header() {
   return (
     <div className="headerDiv">
-     <div className="leftPart">
-      <p>Book Search</p>
-      <SearchInput />
-      </div>
+      {/* <div className="leftPart"> */}
+        {/* <p>Book Search</p> */}
+        <SearchInput />
+      {/* </div> */}
     </div>
   );
 }

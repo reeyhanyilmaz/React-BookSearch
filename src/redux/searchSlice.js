@@ -14,7 +14,7 @@ export const fetchBookData = createAsyncThunk(
       );
       
       console.log("res", res);
-      return res.data.items;
+      return res.data.items
     }
   // }
 );
