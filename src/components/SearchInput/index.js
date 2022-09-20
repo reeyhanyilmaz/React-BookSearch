@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchBookData, setSearch } from "../../redux/searchSlice";
 import { Button, Input } from "@chakra-ui/react";
-import "./style.scss"
+import "./style.scss";
 
 function SearchInput() {
   const dispatch = useDispatch();
@@ -23,11 +23,15 @@ function SearchInput() {
           type="text"
           value={search}
           onChange={(e) => dispatch(setSearch(e.target.value))}
-          variant='filled'
-          style={{marginRight: "10px"}}
+          variant="filled"
+          style={{ marginRight: "10px" }}
         />
-        <Button colorScheme="purple" type="submit">
-         <img src="./assets/search(1).png" alt="search" className="searchButtonIcon"/>
+        <Button colorScheme="purple" type="submit" disabled={search === ""}>
+          <img
+            src="./assets/search(1).png"
+            alt="search"
+            className="searchButtonIcon"
+          />
         </Button>
       </form>
     </div>
